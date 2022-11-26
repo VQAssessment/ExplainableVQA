@@ -1,2 +1,1 @@
-# ExplainableVQA
-[Official repository] for "Large-scale Subjective and Objective Studies on Explaining In-the-wild Video Quality"
+# Maxwell Database for Explainable Quality Evaluation for In-the-wild Videos
