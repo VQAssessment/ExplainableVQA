@@ -149,7 +149,8 @@ print(val_datasets.keys())
 
 
 
-    
+os.makedirs("features",exist_ok=True)
+
 for val_name, val_dataset in val_datasets.items():
     if "maxwell" not in val_name:
         print(f"Omitting {val_name}")

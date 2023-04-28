@@ -104,6 +104,7 @@ state_dict = torch.load("maxvqa_maxwell.pt")
 maxvqa.load_state_dict(state_dict)
 maxvqa.initialize_inference(text_encoder)
 
+os.makedirs("features",exist_ok=True)
 feats = {}
 for val_name, val_dataset in val_datasets.items():
     if "train" in val_name:

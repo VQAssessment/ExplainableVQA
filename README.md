@@ -1,6 +1,7 @@
 # Towards Explainable In-the-Wild Video Quality Assessment
 
 A subjective study (Maxwell database) and a language-prompt approach (MaxVQA Model).
+The database (training part) will be released later.
 
 ## Installation
 
@@ -24,18 +25,40 @@ cd pretrained_weights
 wget https://github.com/QualityAssessment/DOVER/releases/download/v0.1.0/DOVER.pth 
 ```
 
-Return to MaxVQA.
+## Huggingface Workspace on MaxVQA
 
 
-## Usage
+## Development on MaxVQA
 
 ### Inference from Videos
 
-### Inference from Features
+```python
+infer_from_videos.py
+```
+
+### Inference from Pre-extracted Features
+
+```python
+infer_from_feats.py
+```
+
+For the first time, the script will extract features from videos.
 
 
+### Training on Mixed Existing VQA Databases
 
+For the default setting, train on LIVE-VQC, KoNViD-1k, and YouTube-UGC.
 
-## Maxwell Dataset for Explainable Quality Evaluation for In-the-wild Videos
+```python
+train_multi_existing.py -o LKY.yml
+```
 
-![Fig](figs/demo_interface.png)
+You can also modify the yaml file to include more datasets for training.
+
+## Obtaining Data for the Maxwell Database
+
+TBA.
+
+## Citation
+
+TBA.

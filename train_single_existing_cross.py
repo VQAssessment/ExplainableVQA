@@ -232,6 +232,7 @@ if __name__ == "__main__":
 
 
 
+    os.makedirs("features",exist_ok=True)
 
     all_srccs, all_plccs, all_s_srccs, all_s_plccs, bs, bp = [], [], [], [], [], []
     for split in range(10):

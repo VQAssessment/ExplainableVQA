@@ -185,7 +185,7 @@ if __name__ == "__main__":
     print("Extracting pooled features...")
 
 
-
+    os.makedirs("features",exist_ok=True)
     for val_name, val_dataset in val_datasets.items():
         feat_path = f"features/maxvqa_vis_{val_name}.pkl"
         if glob.glob(feat_path):
