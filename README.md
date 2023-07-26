@@ -1,11 +1,25 @@
-# Towards Explainable In-the-Wild Video Quality Assessment
+# Explainable Video Quality Assessment
 
-A subjective study (Maxwell database) and a language-prompt approach (MaxVQA Model).
-The database (training part) will be released later.
+Official Repository for ACMMM 2023 Paper: "Towards Explainable Video Quality Assessment: a Database and a Language-prompt Approach." Paper Link: [Arxiv](https://arxiv.org/abs/2305.12726)
+
+Welcome to visit Sibling Repositories from our team:
+
+[FAST-VQA](https://github.com/vqassessment/FAST-VQA-and-FasterVQA)
+
+[DOVER](https://github.com/vqassessment/DOVER)
+
+[Zero-shot BVQI](https://github.com/vqassessment/BVQI)
+
+The database (Maxwell, training part) will be released before end of July. Stay tuned!
+![](figs/maxwell.png)
+
+The code and pre-trained weights of MaxVQA are released in this repo.
+![](figs/maxvqa.png)
+
 
 ## Installation
 
-Install and modify OpenCLIP:
+Install and modify [OpenCLIP](https://github.com/mlfoundations/open_clip):
 
 ```
 git clone https://github.com/mlfoundations/open_clip.git
@@ -14,7 +28,7 @@ sed -i '92s/return x\[0\]/return x/' src/open_clip/modified_resnet.py
 pip install -e .
 ```
 
-Install DOVER for Pre-processing and FAST-VQA weights:
+Install [DOVER](https://github.com/vqassessment/DOVER) for Pre-processing and FAST-VQA weights:
 
 ```
 git clone https://github.com/vqassessment/DOVER.git
@@ -22,13 +36,11 @@ cd DOVER
 pip install -e .
 mkdir pretrained_weights 
 cd pretrained_weights 
-wget https://github.com/QualityAssessment/DOVER/releases/download/v0.1.0/DOVER.pth 
+wget https://github.com/VQAssessment/DOVER/releases/download/v0.1.0/DOVER.pth 
 ```
 
-## Huggingface Workspace on MaxVQA
 
-
-## Development on MaxVQA
+## MaxVQA
 
 ### Inference from Videos
 
@@ -42,7 +54,7 @@ infer_from_videos.py
 infer_from_feats.py
 ```
 
-For the first time, the script will extract features from videos.
+*For the first run, the script will extract features from videos.*
 
 
 ### Training on Mixed Existing VQA Databases
@@ -57,8 +69,17 @@ You can also modify the yaml file to include more datasets for training.
 
 ## Obtaining Data for the Maxwell Database
 
-TBA.
+Will be added soon.
 
 ## Citation
 
-TBA.
+Please feel free to cite our paper:
+
+```bibtex
+@article{wu2023maxvqa,
+  title={Towards Explainable In-the-Wild Video Quality Assessment: a Database and a Language-Prompted Approach},
+  author={Wu, Haoning and Zhang, Erli and Liao, Liang and Chen, Chaofeng and Hou, Jingwen and Wang, Annan  and Sun, Wenxiu and Yan, Qiong and Lin, Weisi},
+  journal={Arxiv Preprint},
+  year={2023}
+}
+```
