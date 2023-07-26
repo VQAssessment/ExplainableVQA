@@ -42,6 +42,15 @@ wget https://github.com/VQAssessment/DOVER/releases/download/v0.1.0/DOVER.pth
 
 ## MaxVQA
 
+### Gradio Demo
+
+```python
+demo_maxvqa.py
+```
+
+You can maintain a custom service for multi-dimensional VQA.
+
+
 ### Inference from Videos
 
 ```python
