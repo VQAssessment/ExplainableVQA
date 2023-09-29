@@ -1,16 +1,12 @@
 # *Towards* Explainable Video Quality Assessment
 
-Official Repository for ACMMM 2023 Paper: "Towards Explainable Video Quality Assessment: a Database and a Language-prompt Approach." Paper Link: [Arxiv](https://arxiv.org/abs/2305.12726)
+Official Repository for ACMMM 2023 Paper: "Towards Explainable in-the-wild Video Quality Assessment: a Database and a Language-prompt Approach." Paper Link: [Arxiv](https://arxiv.org/abs/2305.12726)
 
 Dataset Link: [Google Drive](https://drive.google.com/file/d/1qs7C5Nq_twIpJpP3HwpjT-Yf-51qZ7Nd/view?usp=sharing), [Baidu Pan](to-be-updated).
 
 Welcome to visit Sibling Repositories from our team:
 
-[FAST-VQA](https://github.com/vqassessment/FAST-VQA-and-FasterVQA) 
-
-[DOVER](https://github.com/vqassessment/DOVER)
-
-[Zero-shot BVQI](https://github.com/vqassessment/BVQI)
+[FAST-VQA](https://github.com/vqassessment/FAST-VQA-and-FasterVQA)  ｜ [DOVER](https://github.com/vqassessment/DOVER)  ｜  [Zero-shot BVQI](https://github.com/vqassessment/BVQI)
 
 The database (Maxwell, training part) has been released.
 ![](figs/maxwell.png)
