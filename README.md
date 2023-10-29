@@ -2,7 +2,7 @@
 
 Official Repository for ACMMM 2023 Paper: "Towards Explainable in-the-wild Video Quality Assessment: a Database and a Language-prompt Approach." Paper Link: [Arxiv](https://arxiv.org/abs/2305.12726)
 
-Dataset Link: [Hugginface](https://huggingface.co/datasets/teowu/MaxWell/resolve/main/videos.zip), [Baidu Pan](https://pan.baidu.com/s/1sScyTryyGHAJic8Z2P70nw?pwd=a2mb).
+Dataset Link: [Huggingface](https://huggingface.co/datasets/teowu/MaxWell/resolve/main/videos.zip), [Baidu Pan](https://pan.baidu.com/s/1sScyTryyGHAJic8Z2P70nw?pwd=a2mb).
 
 Welcome to visit Sibling Repositories from our team:
 
