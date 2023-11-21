@@ -1,8 +1,11 @@
 # *Towards* Explainable Video Quality Assessment
 
+
+*New! Use DOVER++ with the merged [DIVIDE-MaxWell](https://github.com/VQAssessment/DOVER/tree/master/get_divide_dataset) dataset!*
+
 Official Repository for ACMMM 2023 Paper: "Towards Explainable in-the-wild Video Quality Assessment: a Database and a Language-prompt Approach." Paper Link: [Arxiv](https://arxiv.org/abs/2305.12726)
 
-Dataset Link: [Huggingface](https://huggingface.co/datasets/teowu/MaxWell/resolve/main/videos.zip), [Baidu Pan](https://pan.baidu.com/s/1sScyTryyGHAJic8Z2P70nw?pwd=a2mb).
+Dataset Link: [Hugging Face](https://huggingface.co/datasets/teowu/DIVIDE-MaxWell/resolve/main/videos.zip).
 
 Welcome to visit Sibling Repositories from our team:
 
@@ -74,19 +77,31 @@ train_multi_existing.py -o LKY.yml
 
 You can also modify the yaml file to include more datasets for training.
 
-## Obtaining Data for the Maxwell Database
 
-Will be added soon.
 
 ## Citation
 
-Please feel free to cite our paper:
+Please feel free to cite our paper if you use this method or the MaxWell database (*with explanation-level scores*):
 
 ```bibtex
-@article{wu2023maxvqa,
-  title={Towards Explainable In-the-Wild Video Quality Assessment: a Database and a Language-Prompted Approach},
-  author={Wu, Haoning and Zhang, Erli and Liao, Liang and Chen, Chaofeng and Hou, Jingwen and Wang, Annan  and Sun, Wenxiu and Yan, Qiong and Lin, Weisi},
-  journal={Arxiv Preprint},
-  year={2023}
+%explainable
+@inproceedings{wu2023explainable,
+      title={Towards Explainable Video Quality Assessment: A Database and a Language-Prompted Approach}, 
+      author={Wu, Haoning and Zhang, Erli and Liao, Liang and Chen, Chaofeng and Hou, Jingwen and Wang, Annan and Sun, Wenxiu and Yan, Qiong and Lin, Weisi},
+      year={2023},
+      booktitle={ACM MM},
 }
 ```
+
+This dataset is built upon the original DIVIDE-3K dataset (*with perspective scores*) proposed by our ICCV2023 paper:
+
+```bibtex
+%dover and divide
+@inproceedings{wu2023dover,
+      title={Exploring Video Quality Assessment on User Generated Contents from Aesthetic and Technical Perspectives}, 
+      author={Wu, Haoning and Zhang, Erli and Liao, Liang and Chen, Chaofeng and Hou, Jingwen and Wang, Annan and Sun, Wenxiu and Yan, Qiong and Lin, Weisi},
+      year={2023},
+      booktitle={ICCV},
+}
+```
+
